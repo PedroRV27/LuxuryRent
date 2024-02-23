@@ -1,0 +1,16 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.search-input,
+.date-picker,
+.bedroom-selector {
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    width: 150px;
+}

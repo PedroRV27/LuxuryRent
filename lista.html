@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Afacad:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:wght@400,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="assets/logo2.png" alt="Logo" class="navbar-logo">
+        </a></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="lista.html">Listas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detalle.html">Detalle</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container">
+        <div class="search-input">
+            <input type="text" class="form-control" placeholder="Buscar...">
+        </div>
+        <div class="date-picker">
+          <input type="date" class="form-control">
+      </div>
+        <div class="bedroom-selector">
+            <select class="form-control">
+                <option value="1">1 Dormitorio</option>
+                <option value="2">2 Dormitorios</option>
+                <option value="3">3 Dormitorios</option>
+                <option value="4">4 Dormitorios</option>
+            </select>
+        </div>
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+  
+    <!-- casa 1 -->
+    <div id="container">
+        <div class="box box-content">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade slider-lista carousel-lista" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="foto d-block w-100" src="./img/house.jpg" alt="Primera Casa" >
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house1.jpg" alt="Segunda Casa">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house2.jpg" alt="Tercera Casa">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="main-company">
+                    <h3 class="company">Luxury House</h3>
+                    <span class="new" style="display:NEW!;">NEW!</span>
+                    <span class="featured" style="display:FEATURED;">FEATURED</span>
+                </div>
+                <h2 class="position">Casa en Italia</h2>
+                <div class="description">
+                    <p class="postedAt descript">4 personas</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="contract descript">4 beds</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="location descript">Italia</p>
+                </div>
+            </div>
+            <div class="requires">
+                <p class="require req">Piscina</p>
+                <p class="require req">Jacuzzi</p>
+                <p class="require req HTML">Cine</p>
+                <p class="require req CSS">Sala de juegos</p>
+                <p class="require req JavaScript">Garaje</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- casa 2 -->
+    <div id="container">
+        <div class="box box-content">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-lista" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="foto d-block w-100" src="./img/house.jpg" alt="Primera Casa" >
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house1.jpg" alt="Segunda Casa">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house2.jpg" alt="Tercera Casa">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="main-company">
+                    <h3 class="company">Luxury House</h3>
+                    <span class="new" style="display:NEW!;">NEW!</span>
+                    <span class="featured" style="display:FEATURED;">FEATURED</span>
+                </div>
+                <h2 class="position">Casa en Italia</h2>
+                <div class="description">
+                    <p class="postedAt descript">4 personas</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="contract descript">4 beds</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="location descript">Italia</p>
+                </div>
+            </div>
+            <div class="requires">
+                <p class="require req">Piscina</p>
+                <p class="require req">Jacuzzi</p>
+                <p class="require req HTML">Cine</p>
+                <p class="require req CSS">Sala de juegos</p>
+                <p class="require req JavaScript">Garaje</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- casa 3 -->
+
+    <div id="container">
+        <div class="box box-content">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-lista" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="foto d-block w-100" src="./img/house.jpg" alt="Primera Casa" >
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house1.jpg" alt="Segunda Casa">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="foto d-block w-100" src="./img/house2.jpg" alt="Tercera Casa">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <div class="main-content">
+                <div class="main-company">
+                    <h3 class="company">Luxury House</h3>
+                    <span class="new" style="display:NEW!;">NEW!</span>
+                    <span class="featured" style="display:FEATURED;">FEATURED</span>
+                </div>
+                <h2 class="position">Casa en Italia</h2>
+                <div class="description">
+                    <p class="postedAt descript">4 personas</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="contract descript">4 beds</p>
+                    <p class="descript"><strong>·</strong></p>
+                    <p class="location descript">Italia</p>
+                </div>
+            </div>
+            <div class="requires">
+                <p class="require req">Piscina</p>
+                <p class="require req">Jacuzzi</p>
+                <p class="require req">Cine</p>
+                <p class="require req">Sala de juegos</p>
+                <p class="require req">Garaje</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <section id="contact" class="contact mt-4  pt-5 px-5">
+            <div class="container container-fluid">
+              <div id="forms">
+                <div class="row mb-3">
+                  <div class="col-12 col-md-12 col-lg-6 mb-md-5">
+                    <a href="#"> <h2>Download our mobile app</h2>
+                      <p>Book rooms easily on our mobile phone</p> </a>
+                    <div class="icons" id="download">
+                      <a href="#"><img src="assets/Logo.png" alt="icon" style="width: 150px;"></a>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="col col-md-12 col-lg-6">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <form>
+                      <div class="form-group">
+                        
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                    
+                        <input type="password" class="form-control" placeholder="Password" >
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="offers">
+                        <label class="form-check-label" for="offers">Send me emails and updates of new offers</label>
+                      </div>
+                      <button type="submit" class="btn btn-warning">SIGN UP</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3 mb-3 py-4" id="footer">
+                  <div class="col col-lg-3 rem">
+                    <h5 class="text-uppercase font-weight-bold">REGAL HOTEL</h5>
+                    <ul class="list-unstyled">
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Site Map</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">FAQ</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Sustainability</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Property Map</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Document Library</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Responsible Balling</a>
+                      </li>
+                  </ul>
+                  </div>
+                  <div class="col col-lg-3 rem">
+                    <h5 class="text-uppercase font-weight-bold">Guest services</h5>
+                    <ul class="list-unstyled">
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Premier Map</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Your Reservation</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Guest Receipt</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Concierge Services</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Gift Cards & Coupons</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Guest Sign-up</a>
+                      </li>
+                  </ul>
+                  </div>
+                  <div class="col col-lg-3 rem">
+                    <h5 class="text-uppercase font-weight-bold">More</h5>
+                    <ul class="list-unstyled">
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Terms & Conditions</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Regal Magazine</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Hotel Development</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Residences</a>
+                      </li>
+                      <li class="p-1 small">
+                          <a href="#" class="footer-link">Privacy Policy</a>
+                      </li>
+                  </ul>
+                  
+                  </div>
+                  <div class="col col-lg-3 logo">
+                    <div class="row">
+                      <div class="col-12"> <img src="assets/logo2.png" alt="logo.png"> 
+                      </div>
+                      <div class="col-12 mt-4" id="media">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a href="#"><i class="fab fa-facebook-square fa-2x  "></i></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="#"><i class="fab fa-twitter fa-2x "></i></a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="#"><i class="fab  fa-instagram fa-2x  "></i></a>
+                          </li>
+                      </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

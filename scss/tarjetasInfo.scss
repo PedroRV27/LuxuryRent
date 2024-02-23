@@ -1,0 +1,42 @@
+.card {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 160vh;
+
+    .card-img {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: gold; 
+      }
+      .date {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: $color-primary; 
+        color:white;
+        padding: 2px 5px;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+    }
+    .card-body {
+      height: 48vh;
+        .btn-read-more {
+          background-color: white; 
+          color: $color-primary; 
+          border: 2px solid $color-primary; 
+          transition: background-color 0.3s, color 0.3s; 
+          &:hover {
+            background-color: $color-primary; 
+            color: white; 
+          }
+        }
+      }
+    }
+  
+
+  

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alquiler de Casas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Afacad:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:wght@400,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="assets/logo2.png" alt="Logo" class="navbar-logo">
+      </a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="lista.html">Listas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="detalle.html">Detalle</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="search-container">
+      <div class="search-input">
+          <input type="text" class="form-control" placeholder="Buscar...">
+      </div>
+      <div class="date-picker">
+        <input type="date" class="form-control">
+    </div>
+      <div class="bedroom-selector">
+          <select class="form-control">
+              <option value="1">1 Dormitorio</option>
+              <option value="2">2 Dormitorios</option>
+              <option value="3">3 Dormitorios</option>
+              <option value="4">4 Dormitorios</option>
+          </select>
+      </div>
+      <button class="btn btn-primary">Buscar</button>
+  </div>
+
+<!-- Slider Imagenes -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="foto d-block w-100" src="./img/house.jpg" alt="Primera Casa">
+        </div>
+        <div class="carousel-item">
+            <img class="foto d-block w-100" src="./img/house1.jpg" alt="Segunda Casa">
+        </div>
+        <div class="carousel-item">
+            <img class="foto d-block w-100" src="./img/house2.jpg" alt="Tercera Casa">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<!-- seccion dslider -->
+<section class="dslider">
+    <img src="assets/partner-thetimes-logo_11-22.png">
+    <img src="assets/partner-tripadvisor-logo_11-22.png">
+    <img src="assets/partner-vogue-logo_11-22.png">
+    <img src="assets/partner-condenast-traveller-logo_11-22.png">
+    <img src="assets/partner-countryandtownhouse-logo_12-22.png">
+</section>
+
+
+<!-- Seccion de informacion -->
+<section class="container information-section">
+    <h2>LUXURY VILLAS & VACATION RENTALS IN ITALY</h2>
+    <div class="information">
+      <div class="info-item">
+        <img src="/assets/medalla.png">
+        <h3>Experience</h3>
+        <p>31 YEARS OF EXPERIENCE</p>
+        <p>We personally inspect the finest villas for rent in Italy</p>
+      </div>
+      <div class="info-item">
+        <img src="/assets/user.png">
+        <h3>Concierge Service</h3>
+        <p>OUTSTANDING SERVICE</p>
+        <p>We can custom-design your vacation with our first class concierge team</p>
+      </div>
+      <div class="info-item">
+        <img src="/assets/italy.png">
+        <h3>Italy Based</h3>
+        <p>BASED IN ITALY</p>
+        <p>Your best expert of every region for your luxury holiday villa stay in Italy</p>
+      </div>
+      <div class="info-item">
+        <img src="/assets/etiqueta.png">
+        <h3>Special Offers</h3>
+        <p>SPECIAL OFFERS</p>
+        <p>Discover our latest deals for the best luxury villa rentals in Italy!</p>
+      </div>
+    </div>
+    <div class="container">
+    <button class="btn btn-primary">EXPLORE OUR VILLAS FOR RENT</button>
+    </div>
+  </section>
+
+  <!-- Seccion Tarjetas -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/florencia.jpg" alt="Imagen 1">
+            <div class="date">20/02/2024</div>
+          </div>
+          <div class="card-body">
+            <h4>The best areas to rent a luxury villa in Sardinia</h3>
+            <p class="card-text">Nestled in the heart of the Mediterranean, Sardinia stands as a beacon of untouched beauty, offering visitors a slice of paradise unlike any other. With its crystal-clear waters, rugged coastline, and ancient history, Sardinia is a destination that captivates the soul. And what better way to ..</p>
+            <a href="#" class="btn btn-read-more">Leer más</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/paris.jpg" alt="Imagen 2">
+            <div class="date">21/02/2024</div>
+          </div>
+          <div class="card-body">
+            <h4>Valentine's Day in Verona, the Italian city of love</h3>
+            <p class="card-text">Valentine’s Day is around the corner and quoting one of the most iconic song lyrics of all time ‘’Love is in the air’’. This week we take you to the city symbol of eternal love: Verona, the ultimate lovers’ getaway to celebrate in grand style with a luxury Italian vacation.</p>
+            <a href="#" class="btn btn-read-more">Leer más</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/Sardinia.jpg" alt="Imagen 3">
+            <div class="date">22/02/2024</div>
+          </div>
+          <div class="card-body">
+            <h4>Italy's Carnival traditions from Venice to Florence</h3>
+            <p class="card-text">In the vibrant tapestry of Italian culture, few events capture the essence of revelry and tradition quite like the Carnival. Across the country, from the romantic canals of Venice to the artistic streets of Florence, this annual celebration ignites a riot of colors, music, and masked enchantment. ...</p>
+            <a href="#" class="btn btn-read-more">Leer más</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/roma.jpg" alt="Imagen 4">
+            <div class="date">23/02/2024</div>
+          </div>
+          <div class="card-body">
+            <h4>Lake Orta, Italy's undiscovered gem and charming destination</h3>
+            <p class="card-text">Nestled in the Piedmont region of northern Italy, Lake Orta is a tranquil oasis of natural beauty and historical charm. Often overshadowed by its more famous neighbor, Lake Como, this underrated gem offers visitors a serene and authentic experience away from the crowds ...</p>
+            <a href="#" class="btn btn-read-more">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+<!-- Prefooter -->
+  <section class="hero">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 text-center">
+          <h1>Home in St. Barts</h1>
+          <p>“Unlimited collection, your dream villa in the Carribean is here</p>
+          <a href="#" class="explore-btn">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <section id="contact" class="contact mt-4  pt-5 px-5">
+        <div class="container container-fluid">
+          <div id="forms">
+            <div class="row mb-3">
+              <div class="col-12 col-md-12 col-lg-6 mb-md-5">
+                <a href="#"> <h2>Download our mobile app</h2>
+                  <p>Book rooms easily on our mobile phone</p> </a>
+                <div class="icons" id="download">
+                  <a href="#"><img src="assets/Logo.png" alt="icon" style="width: 150px;"></a>
+                  
+                  
+                </div>
+              </div>
+              <div class="col col-md-12 col-lg-6">
+                <h2>Subscribe to our Newsletter</h2>
+                <form>
+                  <div class="form-group">
+                    
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                
+                    <input type="password" class="form-control" placeholder="Password" >
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="offers">
+                    <label class="form-check-label" for="offers">Send me emails and updates of new offers</label>
+                  </div>
+                  <button type="submit" class="btn btn-warning">SIGN UP</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 mb-3 py-4" id="footer">
+              <div class="col col-lg-3 rem">
+                <h5 class="text-uppercase font-weight-bold">REGAL HOTEL</h5>
+                <ul class="list-unstyled">
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Site Map</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">FAQ</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Sustainability</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Property Map</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Document Library</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Responsible Balling</a>
+                  </li>
+              </ul>
+              </div>
+              <div class="col col-lg-3 rem">
+                <h5 class="text-uppercase font-weight-bold">Guest services</h5>
+                <ul class="list-unstyled">
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Premier Map</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Your Reservation</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Guest Receipt</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Concierge Services</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Gift Cards & Coupons</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Guest Sign-up</a>
+                  </li>
+              </ul>
+              </div>
+              <div class="col col-lg-3 rem">
+                <h5 class="text-uppercase font-weight-bold">More</h5>
+                <ul class="list-unstyled">
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Terms & Conditions</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Regal Magazine</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Hotel Development</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Residences</a>
+                  </li>
+                  <li class="p-1 small">
+                      <a href="#" class="footer-link">Privacy Policy</a>
+                  </li>
+              </ul>
+              
+              </div>
+              <div class="col col-lg-3 logo">
+                <div class="row">
+                  <div class="col-12"> <img src="assets/logo2.png" alt="logo.png"> 
+                  </div>
+                  <div class="col-12 mt-4" id="media">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-facebook-square fa-2x  "></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-twitter fa-2x "></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab  fa-instagram fa-2x  "></i></a>
+                      </li>
+                  </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </footer>
+    
+
+
+<!-- Agrega los scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

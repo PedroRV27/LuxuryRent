@@ -1,0 +1,189 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .hotel-view {
+    background-color: $color-grey-light-4;
+    border-bottom: $small-border-bottom;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .hotel-detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: $color-grey-light-1;
+    border-bottom: $small-border-bottom;
+    font-size: 1.4rem;
+  }
+  
+  .overview {
+    background-color: rgb(226, 226, 226);
+    fill: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &__heading {
+      font-size: 2.25rem;
+    }
+  
+    &__stars {
+      color: $color-primary;
+    }
+  
+    &__location {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__rating {
+      background-color: $color-primary;
+      color: rgb(212, 212, 212);
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  .description,
+  .user-reviews,
+  .cta {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .recommend__count {
+    margin-right: auto;
+  }
+  
+  .recommend__photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: -2rem;
+  }
+  
+  .review {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  
+    &__text {
+      margin-bottom: 1rem;
+    }
+  
+    &__user {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__photo {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+  
+    &__user-name {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+  
+    &__user-date {
+      font-size: 0.95rem;
+      color: #999;
+    }
+  
+    &__rating {
+      font-size: 2.25rem;
+      font-weight: 300;
+      color: $color-primary;
+      margin-left: auto;
+    }
+  }
+  
+  .cta__book-now {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+  
+  .alquilar {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, $color-primary, $primary-hover-color);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    animation: bouncing 1s infinite;
+  
+    &__visible {
+      padding: 2rem 7.5rem;
+    }
+  
+    &:hover {
+        background-image: linear-gradient(to right, $color-primary, $primary-hover-color);
+  
+      & .btn__visible {
+        transform: translateY(100%);
+      }
+    }
+  }
+  
+  @mixin bouncing {
+    @keyframes bouncing {
+      0% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+    }
+  }
+  
+  .btn-inline {
+    background: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      margin-right: 5px;
+    }
+  }
+  
+  .clase-description {
+    background-color: $color-white;
+    -webkit-box-shadow: $box-shadow-medium;
+    box-shadow: $box-shadow-medium;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    padding: 3rem;
+  }
