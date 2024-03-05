@@ -1,33 +1,46 @@
-// Requiere las dependencias de Gulp
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+const {series, parallel, src, dest} = require ("gulp");
+const sass = require('gulp-dart-scss');
+const sassdoc = require('sassdoc');
+const processhtml = require('gulp-processhtml');
+var rename = require("gulp-rename");
+const cssmin = require('gulp-cssmin');
+const replace = require('gulp-replace');
 
 
-gulp.task('sass', function() {
-    return gulp.src('src/scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('dist/css'));
-});
+function concatenar(){
+    return src("css/css?.css").pipe(concat("styles.css")).pipe(dest("css/"));
+}
 
-gulp.task('scripts', function() {
-    return gulp.src('src/js/**/*.js')
-        .pipe(concat('app.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
-});
+function minimizar(){
+    return src("css/css?.css").pipe(concat("styles.css")).pipe(cssmin()).pipe(dest('css/'));
+}
 
-gulp.task('images', function() {
-    return gulp.src('src/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'));
-});
+function min_rename(){
+    return src("css/css?.css").pipe(concat("styles.css")).pipe(cssmin()).pipe(rename({suffix:".min",extname:".css"})).pipe(dest("css/"));
+}
 
-gulp.task('watch', function() {
-    gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
-    gulp.watch('src/js/**/*.js', gulp.series('scripts'));
-});
+var doc_options = {
+    dest:'docs'
+}
 
-gulp.task('default', gulp.series('sass', 'scripts', 'images', 'watch'));
+function generar_docs(){
+    return src("scss/styles.scss").pipe(sassdoc(doc_options));
+}
+function html() {
+    return src('*.html')
+      .pipe(replace(/<link rel="stylesheet" href="css\/style\.css">/, '<link rel="stylesheet" href="assets/css/styles.min.css">'))
+      .pipe(processhtml())
+      .pipe(dest("subir/"));
+  }
+
+function todo(){
+    return src("scss/styles.scss").pipe(sass()).pipe(cssmin()).pipe(rename({suffix:".min",extname:".css"})).pipe(dest("subir/assets/css/"))
+}
+
+exports.concatena=concatenar;
+exports.minimiza=minimizar;
+exports.minimizayrenombra=min_rename;
+exports.todo=todo;
+exports.generar_docs=generar_docs;
+exports.paralelo=parallel(todo,generar_docs);
+exports.revisahtml=html;

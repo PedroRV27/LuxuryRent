@@ -5,7 +5,7 @@
 }
 
 body {
-    background: white;
+    background: $color-white;
 }
 
 #container {
@@ -15,7 +15,7 @@ body {
 }
 
 .box {
-    background: white;
+    background: $color-white;
     border-radius: 7px;
     margin: 25px auto;
     padding: 20px 40px;
@@ -129,7 +129,7 @@ body {
     font-weight: bold;
     font-size: 13px;
     margin-right: 10px;
-    color: white;
+    color: $color-white;
     padding: 4px 8px;
     border-radius: 20px;
     background: $color-primary;
@@ -139,7 +139,7 @@ body {
     font-weight: bold;
     font-size: 13px;
     margin-right: 10px;
-    color: white;
+    color: $color-white;
     padding: 4px 8px;
     border-radius: 20px;
     background: $primary-hover-color;
@@ -183,5 +183,56 @@ body {
 
 .req:hover {
     background: $color-primary;
-    color: white;
+    color: $color-white;
+}
+
+.btn-alquilar {
+    @include boton-alquilar;
+  }
+
+@include monitorm {
+    .main-content {
+        margin-left: 20px;
+        width: auto;
+      }
+    
+      .carousel-lista {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+@include tabletm {
+    #container {
+        width: 95%;
+    }
+      
+    .box {
+        padding: 15px;
+    }
+      
+    .carousel-lista {
+        max-width: 100%;
+        height: auto;
+    }
+    .main-content {
+        margin-left: 20px; 
+    }
+}
+
+@include mobilem{
+    #container {
+        width: 95%; 
+    }
+    .main-content {
+        margin-left: 10px;
+      }
+    
+      .carousel-lista {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .box {
+        padding: 10px;
+      }
 }

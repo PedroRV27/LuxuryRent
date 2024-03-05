@@ -1,8 +1,5 @@
 .search-container {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa;
+    @include search-container;
 }
 
 .search-input,
@@ -13,4 +10,14 @@
 
 input[type="date"] {
     width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .dslider {
+        flex-wrap: wrap; 
+    }
+
+    .dslider img {
+        margin-bottom: 10px; 
+    }
 }

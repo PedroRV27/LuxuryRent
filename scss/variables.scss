@@ -1,0 +1,169 @@
+//Colores que se van a utilizar en todo el proyecto
+/// @group colores
+/// 
+$colors: (
+    color-primario: #007bff,
+    color-secundario: #adadad,
+    color-primary:#9B824C ,
+    primary-hover-color: #756d10,
+    color-white: #fff,
+    color-grey-light-1: #eee,
+    color-grey-light-4: #f1f1f1,
+);
+
+// Colores
+$color-primario: #007bff;
+$color-secundario: #adadad;
+$color-primary:#9B824C ;
+$primary-hover-color: #756d10;
+$color-white: #fff;
+$color-grey-light-1: #eee;
+$color-grey-light-4: #f1f1f1;
+
+//funcion para poner un color predeterminado
+/// @param {string} $color-name - Color en formato de cadena de texto.
+/// @return {color-name} Devuelve el color en formato hexadecimal.
+/// @group colores
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+//Variables del tamaño que pueden tener las fuentes
+/// @group tamaño-fuente
+$tamano:(
+    xxl:6rem,
+    xl:3rem,
+    lg:2.5rem,
+    md:2rem,
+    sm:1.8rem,
+    s:1.35rem,
+    xs:1.15rem,
+    xxs:1rem,
+    xxxs:0.75rem,
+    mini:0.5rem
+);
+
+//funcion para poner una fuente predeterminada
+/// @param {string} $size - Tamaño de la fuente en formato de cadena de texto.
+/// @return {size} Devuelve el tamaño de la fuente.
+/// @group tamaño-fuente
+@function tamano($size){
+    @return map-get($tamano, $size);
+}
+
+//Variables del tamaño que pueden tener los margenes
+/// @group margenes
+$margins:(
+    max:400px,
+    xxxl:320px,
+    xxl:200px,
+    xl:150px,
+    l:125px,
+    lg:100px,
+    md:75px,
+    sm:50px,
+    s:35px,
+    xs:20px,
+    xxs:10px,
+);
+
+//funcion para poner un margen predeterminado
+/// @param {string} $margin - Margen en formato de cadena de texto.
+/// @return {margin} Devuelve el margen.
+/// @group margenes
+@function margin($margin){
+    @return map-get($margins, $margin);
+}
+
+//Variables del tamaño que pueden tener los gaps
+/// @group gaps
+$gaps:(
+    xxxl:200px,
+    xxl:150px,
+    xl:100px,
+    lg:75px,
+    md:50px,
+    sm:20px,
+    xs:10px,
+);
+
+//funcion para poner un gap predeterminado
+/// @param {string} $gap - Tamaño del gap en formato de cadena de texto.
+/// @return {gap} Devuelve el gap.
+/// @group gaps
+@function gap($gap){
+    @return map-get($gaps, $gap);
+}
+
+//Variables del tamaño de ancho que pueden tener los divs
+/// @group anchos
+$widths:(
+    xxl:100vw,
+    xl:80vw,
+    l:65vw,
+    lg:60vw,
+    md:45vw,
+    sm:35vw,
+    s:23vw,
+    xs:20vw,
+);
+
+//funcion para poner un ancho predeterminado
+/// @param {string} $width - Ancho en formato de cadena de texto.
+/// @return {width} Devuelve el ancho.
+/// @group anchos
+@function width($width){
+    @return map-get($widths, $width);
+}
+
+//Variables del tamaño de alto que pueden tener los divs
+/// @group altos
+$heights:(
+    max:max-content,
+    xxl:100vw,
+    xl:80vw,
+    lg:60vw,
+    md:45vw,
+    sm:30vw,
+    s:20vw,
+    xs:10vw,
+);
+
+//funcion para poner una altura predeterminada
+/// @param {string} $height - Alto en formato de cadena de texto.
+/// @return {height} Devuelve la altura.
+/// @group altos
+@function height($height){
+    @return map-get($heights, $height);
+}
+
+//Variables del peso de una fuente predeterminada
+/// @group peso-fuente
+$font-weights: (
+    superlight:100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    extra-bold: 800,
+);
+
+//funcion para poner un peso de fuente predeterminado
+/// @param {string} $weight - Peso de la fuente en formato de cadena de texto.
+/// @return {weight} Devuelve el peso de la fuente.
+/// @group peso-fuente
+@function font-weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+// Tamaños de fuente
+$tamanio-titulo: 24px;
+$tamanio-subtitulo: 18px;
+
+// Márgenes y espaciados
+$espaciado-pequeno: 10px;
+$espaciado-grande: 20px;
+
+//Detalles
+$box-shadow-medium: 0 1rem 2rem rgba(0,0,0,0.1);
+$small-border-bottom: 1px solid #000;

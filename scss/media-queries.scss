@@ -1,0 +1,53 @@
+// Mixin para estilos específicos de tablet
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla minimo de 768px.
+/// @mixin tablet
+@mixin tablet{
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+
+// Mixin para estilos específicos de dispositivos moviles
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla minimo de 576px.
+/// @mixin mobile
+@mixin mobile {
+    @media screen and (min-width: 576px){
+        @content;
+    }
+}
+
+// Mixin para estilos específicos de pantallas mas grandes
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla minimo de 992px.
+/// @mixin monitor
+@mixin monitor {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+
+// Mixin para estilos específicos de tablet (maximo)
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla maximo de 768px.
+/// @mixin tabletm
+@mixin tabletm{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+// Mixin para estilos específicos de dispositivos móviles (maximo)
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla maximo de 576px.
+/// @mixin mobilem
+@mixin mobilem {
+    @media screen and (max-width: 576px){
+        @content;
+    }
+}
+
+// Mixin para estilos específicos de pantallas mas grandes (maximo)
+/// Este mixin aplica estilos solo para dispositivos con un ancho de pantalla maximo de 992px.
+/// @mixin monitorm
+@mixin monitorm {
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
